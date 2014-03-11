@@ -20,8 +20,8 @@ html, body {
 
 body {
     color: #222;
-    font-family: Skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
+    font-family: sans-serif, Skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
     line-height: 1.7em;
 }
 
@@ -73,11 +73,6 @@ a {
     color: #767362;
 }
 
-.nadruk {
-    border-bottom: solid .2em #036564;
-    padding-bottom: .06em;
-}
-
 /* ---------------------- */
 
 /* lay-out */
@@ -103,77 +98,34 @@ section {
 
 /* ---------------------- */
 
-/* sections */
 
-.aandachttrekkers {
-    background: #D6A316 url('../img/aanhef.png') no-repeat center 85%;
-    padding: 240px 0;
+.form-control {
+    border: 2px solid #BDC3C7;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #34495E;
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    height: 42px;
+    line-height: 1.467;
+    padding: 8px 12px;
+    transition: border 0.25s linear 0s, color 0.25s linear 0s, background-color 0.25s linear 0s;
+}
+
+form {
     text-align: center;
 }
 
-.aandachttrekkers h1 {
-    line-height: 1em;
-    color: #222;
-}
-
-/* ---------------------- */
-
-.schedelwespen {
-    background: #F1ECDF;
+form input {
+    display: block;
     clear: both;
+    margin: 1em auto;
+}
+form button {
+        margin: 1em auto;
 }
 
-.schedelwespen h2 {
-    margin-bottom: 0;
-}
-
-.schedelwespen h3 {
-    color: #036564;
-    margin: 2em 0 0 0;
-    font-size: 3em;
-}
--
-.schedelwespen blockquote {
-    color: #222;
-}
-
-/* ---------------------- */
-
-.luisteren {
-    background: #D6A316;
-}
-
-.luisteren h1 {
-    text-align: left;
-    line-height: 1.4em;
-    font-size: 4em;
-    color: #222;
-}
-
-.luisteren p {
-    color: #f2f2f2;
-    font-size: 1em;
-}
-
-/* ---------------------- */
-
-.babys {
-    background: #D4C9AD;
-}
-
-/* ---------------------- */
-
-.imker {
-    background: #D4C9AD;
-}
-
-.imker h1 {
-    color: black;
-    text-align: left;
-    margin-top: 0;
-}
-
-/* ---------------------- */
+/* sections */
 
 .footer {
     background: #F1ECDF;
