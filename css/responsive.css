@@ -1,0 +1,104 @@
+/* Move the nav under the logo when it doesn't fit */
+@media (max-width: 920px) {
+    #container {
+        padding: 10px 20px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 800px) {
+    header nav {
+        position: static;
+    }
+
+    header .nav-collapse li:first-child {
+        margin-top: 10px;
+    }
+
+    nav {
+        font-size: 10pt;
+    }
+
+    nav li {
+        float: none;
+
+        margin: 0;
+        padding: 5px;
+
+        text-align: center;
+    }
+
+    nav .nav-collapse.collapse {
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav .btn-navbar {
+        display: block;
+    }
+
+    footer nav .nav-collapse.collapse {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    footer nav .btn-navbar {
+        display: none;
+    }
+
+    .hero-unit h1 {
+        width: 330px;
+        margin: 60px auto;
+    }
+
+    .column-one-third,
+    .column-two-thirds {
+        float: none;
+
+        width: 100%;
+
+        padding: 0;
+    }
+
+    .column-one-third:first-child {
+        padding: 0;
+    }
+
+    .column-one-third:last-child {
+        padding: 0;
+    }
+
+    .box {
+        min-height: 0;
+
+        margin-bottom: 20px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #container {
+        padding: 5px 10px;
+    }
+
+    .hero-unit h1 {
+        width: auto;
+
+        margin: 30px auto;
+
+        font-size: 25pt;
+    }
+
+    .hero-unit .logo {
+        width: 98.75px;
+        height: 25px;
+
+        margin-bottom: 10px;
+
+        background-size: 98.75px 25px;
+    }
+
+    table.rates thead {
+        font-size: 10pt;
+    }
+}
