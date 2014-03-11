@@ -11,7 +11,6 @@
 }
 
 html {
-    background-color: #f2f2f2;
 }
 
 html, body {
@@ -20,7 +19,7 @@ html, body {
 
 body {
     color: #222;
-    font-family: sans-serif, Skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
+      font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.7em;
 }
@@ -36,8 +35,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
-    color: #BD0000;
+    font-size: 5em;
+    line-height: 0.8em;
+    color: black;
 }
 
 h2 {
@@ -91,29 +91,37 @@ section {
     margin: 0 auto;
 }
 
+
+.auction .site-width {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .copy-width {
     width: 82%;
     margin: 0 auto;
 }
 
+.auction {
+    background-color: #1abc9c;
+}
+.data {
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* ---------------------- */
 
 
-.form-control {
-    border: 2px solid #BDC3C7;
-    border-radius: 6px;
-    box-shadow: none;
-    color: #34495E;
-    font-family: "Lato",Helvetica,Arial,sans-serif;
-    font-size: 15px;
-    height: 42px;
-    line-height: 1.467;
-    padding: 8px 12px;
-    transition: border 0.25s linear 0s, color 0.25s linear 0s, background-color 0.25s linear 0s;
-}
-
 form {
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding: 2em;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 form input {
@@ -125,9 +133,57 @@ form button {
         margin: 1em auto;
 }
 
-/* sections */
+ul.items {
+    font-size: 1em;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto;
+}
+ul.items li {
+    width: 200px;
+    height: 200px;
+    padding-top: 8em;
+    margin: 1em;
+    float: left;
+}
+ul.items li.personal {
+    background: url('../img/icons/Clipboard.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.location {
+    background: url('../img/icons/Map.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.browsing {
+    background: url('../img/icons/Compas.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.calendar {
+    background: url('../img/icons/Calendar.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.mail {
+    background: url('../img/icons/Mail.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.conversations {
+    background: url('../img/icons/Chat.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.thoughts {
+    background: url('../img/icons/Book.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.preferences {
+    background: url('../img/icons/Pocket.png') no-repeat center top;
+    background-size: 70%;
+}
+ul.items li.patterns {
+    background: url('../img/icons/Infinity-Loop.png') no-repeat center top;
+    background-size: 70%;
+}
 
-.footer {
-    background: #F1ECDF;
-    color: #222;
+
+.lead {
+    background: none;
 }
