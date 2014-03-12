@@ -168,14 +168,10 @@ form button {
     background: none;
     width: 30%;
     display: inline-block;
-    margin: 0.5em;
 }
 .tile-image.big-illustration{
     height: 139px;
     width: 140px;
-}
-.tile p{
-    font-size: 18px;
 }
 ul.demo {
     font-size: 1em;
