@@ -1,5 +1,5 @@
 /************************************************/
-/*    Vraag me niet andere mensen te worden     */
+/*    Aan de wereldbevolking - Dataveiling      */
 /************************************************/
 
 * {
@@ -38,19 +38,6 @@ h1 {
     font-size: 4em;
     color: #f1c40f;
 }
-.auction h1.sign{
-    font-family: Monofett;
-    line-height: 0.8em;
-        font-size: 5em;
-    font-weight: normal;
-}
-.auction h1 {
-    font-family: "Roboto Slab";
-     line-height: 0.8em;
-   font-size: 3em;
-    font-weight: normal;
-    text-transform: uppercase;
-}
 h2 {
     font-size: 2.2em;
     line-height: 1.4em;
@@ -63,16 +50,6 @@ h3 {
 h4 {
     font-size: .4em;
     text-transform: uppercase;
-    font-family: 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-}
-
-blockquote {
-    font-family: skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-    font-size: 2.5em;
-    line-height: 1em;
-    letter-spacing: -0.05em;
-    font-weight: normal;
-    text-align: center;
 }
 
 p {
@@ -114,6 +91,15 @@ section {
     margin: 0 auto;
 }
 
+form input {
+    display: block;
+    clear: both;
+    margin: 1em auto;
+}
+form button {
+    margin: 1em auto;
+}
+
 .auction {
     background-color: #16a085;
     color: #2c3e50;
@@ -145,10 +131,14 @@ section {
     text-align: left;
 }
 
-
 /* ---------------------- */
 
-
+.auction h1{
+    font-family: Monofett;
+    line-height: 0.8em;
+    font-size: 5em;
+    font-weight: normal;
+}
 .auction form {
     background-color: #ecf0f1;
     border-radius: 1em;
@@ -156,15 +146,6 @@ section {
     text-align: center;
     width: 100%;
     margin: 1em auto;
-}
-
-form input {
-    display: block;
-    clear: both;
-    margin: 1em auto;
-}
-form button {
-        margin: 1em auto;
 }
 
 .tile {
@@ -175,68 +156,4 @@ form button {
 .tile-image.big-illustration{
     height: 139px;
     width: 140px;
-}
-ul.demo {
-    font-size: 1em;
-    list-style-type: none;
-    padding-left: 0;
-    width: 30%;
-    display: inline-block;
-}
-ul.socio {
-    font-size: 1em;
-    list-style-type: none;
-    padding-left: 0;
-    width: 60%;
-    display: inline-block;
-}
-
-ul.items {
-    font-size: 1em;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0 auto;
-}
-ul.items li {
-    width: 27%;
-    height: 100%;
-    padding-top: 8em;
-    margin: 1em;
-    float: left;
-}
-ul.items li.personal {
-    background: url('../img/icons/Clipboard.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.location {
-    background: url('../img/icons/Map.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.browsing {
-    background: url('../img/icons/Compas.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.calendar {
-    background: url('../img/icons/Calendar.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.mail {
-    background: url('../img/icons/Mail.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.conversations {
-    background: url('../img/icons/Chat.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.thoughts {
-    background: url('../img/icons/Book.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.preferences {
-    background: url('../img/icons/Pocket.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.patterns {
-    background: url('../img/icons/Infinity-Loop.png') no-repeat center top;
-    background-size: 70%;
 }
