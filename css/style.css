@@ -1,5 +1,5 @@
 /************************************************/
-/*    Vraag me niet andere mensen te worden     */
+/*    Aan de wereldbevolking - Dataveiling      */
 /************************************************/
 
 * {
@@ -18,8 +18,8 @@ html, body {
 }
 
 body {
-    color: #222;
-      font-family: "Lato", Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    font-family: "Roboto Slab", "Lato", Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.7em;
 }
@@ -29,17 +29,15 @@ body {
 /* typography */
 
 h1, h2, h3 {
-    font-family: 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
+    font-family: "Roboto Slab", 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
     letter-spacing: -0.05em;
     text-align: center;
 }
 
 h1 {
-    font-size: 5em;
-    line-height: 0.8em;
-    color: black;
+    font-size: 4em;
+    color: #f1c40f;
 }
-
 h2 {
     font-size: 2.2em;
     line-height: 1.4em;
@@ -52,16 +50,6 @@ h3 {
 h4 {
     font-size: .4em;
     text-transform: uppercase;
-    font-family: 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-}
-
-blockquote {
-    font-family: skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-    font-size: 2.5em;
-    line-height: 1em;
-    letter-spacing: -0.05em;
-    font-weight: normal;
-    text-align: center;
 }
 
 p {
@@ -71,6 +59,9 @@ p {
 
 a {
     color: #767362;
+}
+a:hover {
+    color: #e74c3c
 }
 
 /* ---------------------- */
@@ -91,36 +82,8 @@ section {
     margin: 0 auto;
 }
 
-
-.auction .site-width {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
 .copy-width {
     width: 82%;
-    margin: 0 auto;
-}
-
-.auction {
-    background-color: #1abc9c;
-}
-.data {
-    background-color: white;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* ---------------------- */
-
-
-form {
-    background-color: #f2f2f2;
-    border-radius: 1em;
-    padding: 2em;
-    text-align: center;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -130,60 +93,68 @@ form input {
     margin: 1em auto;
 }
 form button {
-        margin: 1em auto;
+    margin: 1em auto;
 }
 
-ul.items {
-    font-size: 1em;
-    list-style-type: none;
-    padding-left: 0;
+.auction {
+    background-color: #16a085;
+    color: #2c3e50;
+    text-align: center;
+}
+.auction .site-width {
+    width: 90%;
+    max-width: 500px;
     margin: 0 auto;
 }
-ul.items li {
-    width: 200px;
-    height: 200px;
-    padding-top: 8em;
-    margin: 1em;
-    float: left;
+.data {
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
 }
-ul.items li.personal {
-    background: url('../img/icons/Clipboard.png') no-repeat center top;
-    background-size: 70%;
+.cta {
+    background-color: #2c3e50;
+    margin: 0 auto;
+    color: #7f8c8d;
 }
-ul.items li.location {
-    background: url('../img/icons/Map.png') no-repeat center top;
-    background-size: 70%;
+.cta .site-width {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
-ul.items li.browsing {
-    background: url('../img/icons/Compas.png') no-repeat center top;
-    background-size: 70%;
+.prologue {
+    background: #95a5a6;
 }
-ul.items li.calendar {
-    background: url('../img/icons/Calendar.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.mail {
-    background: url('../img/icons/Mail.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.conversations {
-    background: url('../img/icons/Chat.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.thoughts {
-    background: url('../img/icons/Book.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.preferences {
-    background: url('../img/icons/Pocket.png') no-repeat center top;
-    background-size: 70%;
-}
-ul.items li.patterns {
-    background: url('../img/icons/Infinity-Loop.png') no-repeat center top;
-    background-size: 70%;
+.prologue .site-width {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
 }
 
+/* ---------------------- */
 
-.lead {
+.auction h1{
+    font-family: Monofett;
+    line-height: 0.8em;
+    font-size: 5em;
+    font-weight: normal;
+}
+.auction form {
+    background-color: #ecf0f1;
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.tile {
     background: none;
+    width: 30%;
+    display: inline-block;
+}
+.tile-image.big-illustration{
+    height: 139px;
+    width: 140px;
 }
