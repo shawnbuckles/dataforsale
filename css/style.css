@@ -82,18 +82,14 @@ section {
     margin: 0 auto;
 }
 
-
-.auction .site-width {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
 .copy-width {
     width: 82%;
     margin: 0 auto;
 }
 
+form {
+    font-family: 'Roboto Slab';
+}
 form input {
     display: block;
     clear: both;
@@ -107,6 +103,11 @@ form button {
     background-color: #16a085;
     color: #2c3e50;
     text-align: center;
+}
+.auction .site-width {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .data {
     background-color: white;
