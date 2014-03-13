@@ -87,9 +87,6 @@ section {
     margin: 0 auto;
 }
 
-form {
-    font-family: 'Roboto Slab';
-}
 form input {
     display: block;
     clear: both;
@@ -130,7 +127,7 @@ form button {
 }
 .prologue .site-width {
     width: 90%;
-    max-width: 550px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: left;
 }
