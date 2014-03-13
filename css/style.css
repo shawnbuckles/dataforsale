@@ -140,9 +140,9 @@ section {
 }
 .prologue .site-width {
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
 }
 
 
