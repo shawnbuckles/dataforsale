@@ -16,37 +16,6 @@
     <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>    
     <script src="js/jquery.validate.min.js"></script> //Script found online
 
-        <script>
-            $(document).ready(function(){
-
-             $('#contact-form').validate(
-             {
-              rules: {
-                name: {
-                  minlength: 2,
-                  required: true
-                },
-                email: {
-                  required: true,
-                  email: true
-                },
-                message: {
-                  minlength: 2,
-                  required: true
-                }
-              },
-              highlight: function(element) {
-                $(element).closest('.control-group').removeClass('success').addClass('error');
-              },
-              success: function(element) {
-                element
-                .text('OK!').addClass('valid')
-                .closest('.control-group').removeClass('error').addClass('success');
-              }
-             });
-            }); // end document.ready
-        </script>
-
 
 </head>
 <body>
@@ -58,29 +27,9 @@
                     <h1>FOR $ALE personal data</h1>
                     <h2>I'm Shawn Buckles</h2>
                     <p>and I will sell my personal data to the highest bidding organization. Auction closes at the 12th of april 2014.</p>
-                    <form>
-                        <input class="form-control input-hg" type="text" name="organization" placeholder="Organization" value="">
-                        <input class="form-control input-hg" type="text" name="country" placeholder="Country" value="">
-                        <input class="form-control input-hg" type="text" name="price" placeholder="Bid in €" value="">
-                        <button class="btn btn-embossed btn-primary btn-hg">Place bid</button>
-                    </form>
-                        <h1>Contact Us</h1>
-                           <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
-                           <hr>
-                                                                                
-                        <form name="enq" method="post" action="email/" onsubmit="return validation();">
-                        <fieldset>
-                            
-                        <input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
-                        <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
-                        <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
-                           
-                        <div class="actions">
-                        <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
-                        </div>
-                            
-                        </fieldset>
-                        </form> 
+                    
+                    <script type="text/javascript" src="http://form.jotformeu.com/jsform/40717579557367"></script>
+
                 </div>
             </div>
         </section>
