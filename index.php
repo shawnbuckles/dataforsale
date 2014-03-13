@@ -8,15 +8,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Auctioning my personal data to the highest bidding organization.">
-<<<<<<< HEAD
-    
-    <link rel="stylesheet" href="./css/vendor/normalize.css" />
-    <link  rel="stylesheet" href="./css/flat-ui.css" />
-    <link  rel="stylesheet" href="./css/style.css" />
-    <link  rel="stylesheet" href="./css/responsive.css" />
-    <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
-
-=======
     
     <link rel="stylesheet" href="./css/vendor/normalize.css" />
     <link  rel="stylesheet" href="./css/flat-ui.css" />
@@ -25,7 +16,6 @@
     <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
     <script src="email/validation.js" type="text/javascript"></script>
     
->>>>>>> master
 </head>
 <body>
     <div class="story-content">
@@ -42,6 +32,23 @@
                         <input class="form-control input-hg" type="text" name="price" placeholder="Bid in €" value="">
                         <button class="btn btn-embossed btn-primary btn-hg">Place bid</button>
                     </form>
+                        <h1>Contact Us</h1>
+                           <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+                           <hr>
+                                                                                
+                        <form name="enq" method="post" action="email/" onsubmit="return validation();">
+                        <fieldset>
+                            
+                        <input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+                        <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
+                        <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
+                           
+                        <div class="actions">
+                        <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+                        </div>
+                            
+                        </fieldset>
+                        </form> 
                 </div>
             </div>
         </section>
