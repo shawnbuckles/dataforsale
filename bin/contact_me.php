@@ -1,23 +1,24 @@
 <?php
 // check if fields passed are empty
-if(empty($_POST['organization'])  		||
+if(empty($_POST['name'])  		||
    empty($_POST['country']) 		||
-   empty($_POST['bid'])	||
+   empty($_POST['message'])	||
    {
 	echo "No arguments Provided!";
 	return false;
    }
 	
-$name = $_POST['organization'];
-$email_address = $_POST['country'];
-$message = $_POST['bid'];
+$name = $_POST['name'];
+$country = $_POST['country'];
+$message = $_POST['message'];
 	
 // create email body and send it	
 $to = 'shawn.buckles@gmail.com'; // put your email
-$email_subject = "Nieuw bod op data";
-$email_body =   "\n \nOrganisatie: $name \n ".
-				"Land: $country\n Bod: \n $bid";
-$headers = "From: eenzaam@shawnbuckles.nl\n";
+$email_subject = "Contact form submitted by:  $name";
+$email_body = "You have received a new message. \n\n".
+				  " Here are the details:\n \nName: $name \n ".
+				  "Email: $country\n Message \n $message";
+$headers = "From: contacts@myprogrammingblog.com\n";
 mail($to,$email_subject,$email_body,$headers);
 return true;			
 ?>
