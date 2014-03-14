@@ -1,6 +1,6 @@
 <?php
 // check if fields passed are empty
-if(empty($_POST['name'])  		||
+if(empty($_POST['organization'])  		||
    empty($_POST['country']) 		||
    empty($_POST['bid'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
@@ -9,7 +9,7 @@ if(empty($_POST['name'])  		||
 	return false;
    }
 	
-$name = $_POST['name'];
+$name = $_POST['organization'];
 $email_address = $_POST['country'];
 $message = $_POST['bid'];
 	
@@ -17,7 +17,7 @@ $message = $_POST['bid'];
 $to = 'shawn.buckles@gmail.com'; // put your email
 $email_subject = "Nieuw bod op data";
 $email_body =   "\n \nOrganisatie: $name \n ".
-				"Land: $country\n  \n $bid";
+				"Land: $country\n Bod: \n $bid";
 $headers = "From: eenzaam@shawnbuckles.nl\n";
 mail($to,$email_subject,$email_body,$headers);
 return true;			
