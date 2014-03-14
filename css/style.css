@@ -158,3 +158,7 @@ form button {
     height: 139px;
     width: 140px;
 }
+
+.alert {
+    margin: 20px 0 0 0;
+}

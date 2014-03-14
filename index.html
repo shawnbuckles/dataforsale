@@ -10,10 +10,10 @@
     <meta name="description" content="Auctioning my personal data to the highest bidding organization.">
 
     
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="./css/vendor/normalize.css" />
     <link  rel="stylesheet" href="./css/flat-ui.css" />
     <link  rel="stylesheet" href="./css/style.css" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link  rel="stylesheet" href="./css/responsive.css" />
     <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
 
@@ -29,26 +29,32 @@
                     <p>and I will sell my personal data to the highest bidding organization. Auction closes at the 12th of april 2014.</p>
 
                     <form name="sentMessage" class="well" id="contactForm"  novalidate>
-                        <div class="control-group">
-                            <div class="controls">
-                                <input class="form-control input-hg" type="text" name="name" placeholder="Organization" value="" required data-validation-required-message="Please enter your organizations name" />
-                                <p class="help-block"></p>
-                            </div>
+                    <div class="control-group">
+                        <div class="controls">
+                        <input type="text" class="form-control input-hg" 
+                               placeholder="Organization" id="name" required
+                                   data-validation-required-message="Please enter your organizations name" />
+                          <p class="help-block"></p>
                         </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <input class="form-control input-hg" type="text" name="country" placeholder="Country" value=""required
-                               data-validation-required-message="Please enter your country" />
-                            </div>
+                    </div>     
+                    <div class="control-group">
+                        <div class="controls">
+                        <input type="email" class="form-control input-hg" placeholder="Email" 
+                                        id="email" required
+                                   data-validation-required-message="Please enter your email" />
                         </div>
-                         <div class="control-group">
-                            <div class="controls">
-                               <input class="form-control input-hg" type="text" name="bid" placeholder="Bid in €" value=""required
-                               data-validation-required-message="Please enter your bid" />
-                            </div>
+                    </div>  
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea rows="1" cols="10" class="form-control input-hg" 
+                                   placeholder="Bid" id="message" required
+                           data-validation-required-message="Please enter your bid" minlength="1" 
+                                   data-validation-minlength-message="Min 1 figure" 
+                                    maxlength="6" style="resize:none"></textarea>
                         </div>
-                         <div id="success"> </div> <!-- For success/fail messages -->
-                        <button type="submit" class="btn btn-embossed btn-primary btn-hg">Place bid</button>
+                    </div>        
+                    <div id="success"> </div> <!-- For success/fail messages -->
+                    <button type="submit" class="bbtn btn-embossed btn-primary btn-hg">Place bid</button><br />
                     </form>
 
                 </div>
@@ -136,6 +142,8 @@
 
     </div>
 
+    
+ <!-- JS FILES -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
  <script src="./js/bootstrap.min.js"></script>
  <script src="./js/jqBootstrapValidation.js"></script>

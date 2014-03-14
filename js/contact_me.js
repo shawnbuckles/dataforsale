@@ -15,13 +15,17 @@ $(function() {
       event.preventDefault(); // prevent default submit behaviour
        // get values from FORM
        var name = $("input#name").val();  
-       var country = $("input#country").val(); 
+       var email = $("input#email").val(); 
        var message = $("textarea#message").val();
+        var firstName = name; // For Success/Failure Message
+           // Check for white space in name for Success/Fail message
+        if (firstName.indexOf(' ') >= 0) {
+	   firstName = name.split(' ').slice(0, -1).join(' ');
          }        
 	 $.ajax({
                 url: "./bin/contact_me.php",
             	type: "POST",
-            	data: {name: name, country: country, message: message},
+            	data: {name: name, email: email, message: message},
             	cache: false,
             	success: function() {  
             	// Success message
