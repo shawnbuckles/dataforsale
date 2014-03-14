@@ -91,6 +91,7 @@ form input {
     display: block;
     clear: both;
     margin: 1em auto;
+    width: 80%;
 }
 form button {
     margin: 1em auto;

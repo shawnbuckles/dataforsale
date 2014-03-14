@@ -17,8 +17,8 @@ $message = $_POST['message'];
 $to = 'shawn.buckles@gmail.com'; // put your email
 $email_subject = "Nieuw bod op mijn ziel";
 $email_body = "Iemand heeft een bod uitgebracht op jouw ziel. \n\n".
-				  " De details:\n \nName: $name \n ".
-				  "Email: $email_address\n Bod: $message";
+				  " De details:\n Organisatie: $name \n ".
+				  "Email: $email_address\n Bod: € $message";
 $headers = "From: duivel@shawnbuckles.nl\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
