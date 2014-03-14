@@ -3,7 +3,6 @@
 if(empty($_POST['organization'])  		||
    empty($_POST['country']) 		||
    empty($_POST['bid'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
 	return false;
