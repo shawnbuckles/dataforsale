@@ -46,9 +46,11 @@
                     </div>  
                     <div class="control-group">
                         <div class="controls">
-                            <input class="form-control input-hg" 
+                            <textarea rows="1" cols="10" class="form-control input-hg" 
                                    placeholder="Bid" id="message" required
-                           data-validation-required-message="Please enter your bid" />
+                           data-validation-required-message="Please enter your bid" minlength="1" 
+                                   data-validation-minlength-message="Min 1 figure" 
+                                    maxlength="6" style="resize:none"></textarea>
                         </div>
                     </div>        
                     <div id="success"> </div> <!-- For success/fail messages -->
