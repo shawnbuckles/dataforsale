@@ -98,6 +98,9 @@ form button {
 .form-control {
     width: 85%;
 }
+textarea {
+    margin: 0 auto;
+}
 
 .btn-primary {
     border: none;
