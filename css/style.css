@@ -91,10 +91,16 @@ form input {
     display: block;
     clear: both;
     margin: 1em auto;
-    width: 80%;
 }
 form button {
     margin: 1em auto;
+}
+.form-control {
+    width: 85%;
+}
+
+.btn-primary {
+    border: none;
 }
 
 .auction {
