@@ -10,19 +10,12 @@
     <meta name="description" content="Auctioning my personal data to the highest bidding organization.">
 
     
+    <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="./css/vendor/normalize.css" />
     <link  rel="stylesheet" href="./css/flat-ui.css" />
     <link  rel="stylesheet" href="./css/style.css" />
     <link  rel="stylesheet" href="./css/responsive.css" />
-    <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
-
-
-    
-    <link rel="stylesheet" href="./css/vendor/normalize.css" />
-    <link  rel="stylesheet" href="./css/flat-ui.css" />
-    <link  rel="stylesheet" href="./css/style.css" />
-    <link  rel="stylesheet" href="./css/responsive.css" />
-    <link href='http://fonts.googleapis.com/css?family=Monofett|Roboto+Slab:300' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -33,13 +26,39 @@
                 <div class="copy-width">
                     <h1>FOR $ALE personal data</h1>
                     <h2>I'm Shawn Buckles</h2>
-                    <p>and I will sell my personal data to the highest bidding organization. Auction closes at the 12th of april 2014.</p>
-                    <form>
-                        <input class="form-control input-hg" type="text" name="organization" placeholder="Organization" value="">
-                        <input class="form-control input-hg" type="text" name="country" placeholder="Country" value="">
-                        <input class="form-control input-hg" type="text" name="price" placeholder="Bid in €" value="">
-                        <button class="btn btn-embossed btn-primary btn-hg">Place bid</button>
+                    <p>and I will sell my personal data to the highest bidding organization. Auction closes at the 12th of april 2014.*</p>
+
+                    <form name="sentMessage" class="well" id="contactForm"  novalidate>
+                    <div class="control-group">
+                        <div class="controls">
+                        <input type="text" class="form-control input-hg" 
+                               placeholder="Organization" id="name" required
+                                   data-validation-required-message="Please enter your organizations name" />
+                          <p class="help-block"></p>
+                        </div>
+                    </div>     
+                    <div class="control-group">
+                        <div class="controls">
+                        <input type="email" class="form-control input-hg" placeholder="Email" 
+                                        id="email" required
+                                   data-validation-required-message="Please enter your email" />
+                        </div>
+                    </div>  
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea rows="1" cols="10" class="form-control input-hg" 
+                                   placeholder="Bid" id="message" required
+                           data-validation-required-message="Please enter your bid" minlength="1" 
+                                   data-validation-minlength-message="Min 1 figure" 
+                                    maxlength="20" style="resize:none"></textarea>
+                        </div>
+                    </div>        
+                    <div id="success" class="small"> </div> <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-embossed btn-primary btn-hg">Place bid</button><br />
                     </form>
+
+                    <p class="small">* My data of 12th of April 2014 - 12th of April 2015. Non-binding bid policy.</p>
+
                 </div>
             </div>
         </section>
@@ -51,17 +70,17 @@
                     <p>The highest bidder will receive the following of my data:</p>
                     <div class="tile">
                         <img class="tile-image big-illustration" src="img/icons/Clipboard.png" />
-                        <p>My personal records</p>
+                        <p>My personal profile</p>
                     </div>
                      <div class="tile">
                         <img class="tile-image big-illustration" src="img/icons/Map.png" />
                         <p>My location track records</p>
                     </div>
-                    <div class="tile">
-                        <img class="tile-image big-illustration" src="img/icons/Compas.png" />
-                        <p>My browsing history</p>
-                    </div>
                      <div class="tile">
+                        <img class="tile-image big-illustration" src="img/icons/Infinity-Loop.png" />
+                        <p>My train track records</p>
+                    </div>
+                    <div class="tile">
                         <img class="tile-image big-illustration" src="img/icons/Calendar.png" />
                         <p>My personal calendar</p>
                     </div>
@@ -81,9 +100,9 @@
                         <img class="tile-image big-illustration" src="img/icons/Pocket.png" />
                         <p>My consumer preferences</p>
                     </div>
-                     <div class="tile">
-                        <img class="tile-image big-illustration" src="img/icons/Infinity-Loop.png" />
-                        <p>My behavioral patterns</p>
+                    <div class="tile">
+                        <img class="tile-image big-illustration" src="img/icons/Compas.png" />
+                        <p>My browsing history</p>
                     </div>
                 </div>
             </div>
@@ -93,11 +112,7 @@
             <div class="site-width">
                 <div class="copy-width">
                     <h1>Buy me out</h1>
-                    <form>
                     <p>Auction closes the 12th of April <br /> at 12.00pm Amsterdam Time.</p>
-                        <input class="form-control input-hg" type="text" name="price" placeholder="Bid in €" value="">
-                        <button class="btn btn-embossed btn-primary btn-hg">Place bid</button>
-                   </form>
                 </div>
             </div>
         </section>
@@ -108,8 +123,7 @@
                     <p>Everyday, I collect a vast amount of personal data. The computers I’m surrounded with have memory: they monitor my every move. While current legislation is lagging, organizations trade my privacy massively.</p>
                     <p>I agree to all of this by using services as Google, Facebook and Apple. They specialize in collecting data on (consumer)behavior, location and interests -and use my (online) conversations and agenda to map out my networks.</p>
                     <p>Though the real problem lies with governments misusing this big data.</p>
-                    <p>Facebook isn’t free.</p>
-                    <p>You pay with your identity.</p>
+                    <p>Facebook isn’t free. You pay with your identity.</p>
                 </div>
             </div>
         </section>
@@ -118,12 +132,33 @@
             <div class="site-width">
                 <div class="copy-width">
                     <p></p>
-                    <p>Shawn Buckles<br /><a target="blank" href="http://ikvraagmeaf.tumblr.com/tagged/dataforsale/chrono">More on the subject (Dutch)</a><br />Get in touch with me <a href="mailto:&#115;&#104;&#097;&#119;&#110;&#046;&#098;&#117;&#099;&#107;&#108;&#101;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">by e-mail</a>. Here's <a href="http://shawnbuckles.nl/">my website.</a></p>
+                    <p>Shawn Buckles<br /><a target="blank" href="http://ikvraagmeaf.tumblr.com/tagged/dataforsale/chrono">Stay up to date (Dutch)</a><br />Get in touch with me <a href="mailto:&#115;&#104;&#097;&#119;&#110;&#046;&#098;&#117;&#099;&#107;&#108;&#101;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">by e-mail</a>. Here's <a href="http://shawnbuckles.tumblr.com/">my website.</a></p>
+                    <div class="video"><iframe width="640" height="480" src="//www.youtube.com/embed/W0xDyShG64Q" frameborder="0" allowfullscreen></iframe></div>
+                    <h2>Media updates</h2>
+                    <ul class="updates">
+                        <li><a target="_blank" href="http://www.wired.co.uk/news/archive/2014-03/26/shawn-buckles-sells-his-data-soul">Wired.co.uk - interview</a></li>
+                        <li><a target="_blank" href="https://soundcloud.com/bbc-world-service/why-im-selling-my-personal">BBC World Service (Newsday) - interview</a></li>
+                        <li><a target="_blank" href="https://decorrespondent.nl/897/buitenkansje-mensen-mooie-data-te-koop/43681209-ecce3d15">De Correspondent (Dutch) - article </a></li>
+                        <li class="last"><a target="_blank" href="https://www.youtube.com/watch?v=UjLfwUSfJ78">BNN Social Club (Dutch) - television item</a></li>
+                    </ul>
+                    <h2>My work</h2>
+                    <ul class="updates">
+                        <li><a target="_blank" href="http://shawnbuckles.nl/ongebundeld">Writer (Dutch)</a></li>
+                        <li><a target="_blank" href="http://hqbk.nl/">Hacquebord &amp; Buckles</a></li>
+                        <li class="last"><a target="_blank" href="https://soundcloud.com/stuartmavis">Stuart Mavis</a></li>
+                    </ul>                    
                 </div>
             </div>
         </section>
 
     </div>
+
+    
+ <!-- JS FILES -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/jqBootstrapValidation.js"></script>
+ <script src="./js/contact_me.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -131,7 +166,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-45040211-2', 'shawnbuckles.github.io');
+  ga('create', 'UA-45040211-2', 'shawnbuckles.nl');
   ga('send', 'pageview');
 
 </script>

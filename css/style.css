@@ -95,6 +95,15 @@ form input {
 form button {
     margin: 1em auto;
 }
+.form-control {
+    width: 85%;
+}
+textarea {
+    margin: 0 auto;
+}
+.btn-primary {
+    border: none;
+}
 
 .auction {
     background-color: #16a085;
@@ -132,6 +141,20 @@ form button {
     text-align: left;
 }
 
+ul.updates {
+    list-style-type: none;
+}
+ul.updates li {
+    padding: 10px 0;
+    border-top: 1px solid #bdc3c7;
+}
+ul.updates li.last {
+    border-bottom: 1px solid #bdc3c7;
+}
+.video {
+    margin: 0 auto;
+    text-align: center;
+}
 /* ---------------------- */
 
 .auction h1{
@@ -157,4 +180,8 @@ form button {
 .tile-image.big-illustration{
     height: 139px;
     width: 140px;
+}
+
+.alert {
+    margin: 20px 0 0 0;
 }
