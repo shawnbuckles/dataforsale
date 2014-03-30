@@ -112,7 +112,7 @@ textarea {
 }
 .auction .site-width {
     width: 90%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .data {
@@ -148,6 +148,7 @@ textarea {
     line-height: 0.8em;
     font-size: 5em;
     font-weight: normal;
+    margin-bottom: .3em;
 }
 .auction form {
     background-color: #ecf0f1;
