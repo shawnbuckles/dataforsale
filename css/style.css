@@ -141,6 +141,20 @@ textarea {
     text-align: left;
 }
 
+ul.updates {
+    list-style-type: none;
+}
+ul.updates li {
+    padding: 10px 0;
+    border-top: 1px solid #bdc3c7;
+}
+ul.updates li.last {
+    border-bottom: 1px solid #bdc3c7;
+}
+.video {
+    margin: 0 auto;
+    text-align: center;
+}
 /* ---------------------- */
 
 .auction h1{
